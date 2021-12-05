@@ -1,0 +1,7 @@
+link:
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+</style>
+
+css:
+font-family: 'Roboto Slab', serif;
