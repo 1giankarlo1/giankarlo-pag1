@@ -1,0 +1,5 @@
+@each $k, $v in $miMap{
+    .font-weight-#{$k}{
+        font-weight: $v;
+    }
+}
