@@ -5,9 +5,187 @@
   font-family: "Roboto Slab", serif;
 }
 
-.bgWB {
-  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #ffffff), color-stop(50%, #000000));
-  background: linear-gradient(to right, #ffffff 50%, #000000 50%);
+.navBg .navLinks {
+  margin-right: 85px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.logo {
+  font-size: 41px;
+  text-decoration: none;
+  color: #000;
+}
+.logo:hover {
+  color: #360404;
+}
+
+.promos {
+  text-align: center;
+  background-color: #360404;
+  padding-bottom: 1px;
+}
+.promos p {
+  color: white;
+  padding-left: px;
+}
+
+.navPre {
+  padding-top: 46px;
+  padding-bottom: 16px;
+}
+.navPre a {
+  color: #000;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 22px;
+}
+.navPre a:hover {
+  color: #360404;
+}
+
+.publicaciones {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.publicaciones h5 {
+  font-size: 22px;
+  font-weight: 400;
+  text-align: center;
+}
+.publicaciones p {
+  font-size: 18px;
+  padding-top: 12px;
+}
+.publicaciones p span {
+  font-weight: bolder;
+}
+.publicaciones a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #4b0c0c;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 11px;
+  margin-right: 11px;
+  padding-bottom: 7px;
+  padding-top: 7px;
+}
+.publicaciones a:hover {
+  color: #000;
+}
+
+.footer {
+  background-color: #2c2c2c;
+}
+.footer .copyright {
+  background-color: #000;
+}
+
+.presentacionP {
+  margin-top: 40px;
+}
+.presentacionP p {
+  text-align: center;
+  font-size: 39px;
+  font-weight: lighter;
+}
+
+.presentacionH {
+  margin-top: 40px;
+}
+.presentacionH p {
+  text-align: center;
+  font-size: 34px;
+  font-weight: lighter;
+}
+
+.QR {
+  display: block;
+  margin: auto;
+}
+
+.about div {
+  padding-top: 30px;
+}
+.about div h1 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+}
+.about div p {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 300;
+}
+.about div h2 {
+  font-size: 29px;
+  font-weight: 700;
+  padding-top: 40px;
+  padding-left: 15px;
+}
+.about .videoAbout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 90px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.localizacion {
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+.localizacion p {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.mapa {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 40px;
+}
+
+.horarios {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.horarios p {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.Mtable {
+  text-align: center;
+}
+
+.contactoW h2 {
+  text-align: center;
+  font-size: 40px;
+  padding-bottom: 9px;
+}
+.contactoW p {
+  text-align: center;
+  font-size: 19px;
+}
+.contactoW img {
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  margin-bottom: 50px;
 }
 
 .font-weight-light {
@@ -20,52 +198,4 @@
 
 .font-weight-bold {
   font-weight: 700;
-}
-
-.productos .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-.productos .row .col-1 {
-  width: 8.3333333333;
-}
-.productos .row .col-2 {
-  width: 16.6666666667;
-}
-.productos .row .col-3 {
-  width: 25;
-}
-.productos .row .col-4 {
-  width: 33.3333333333;
-}
-.productos .row .col-5 {
-  width: 41.6666666667;
-}
-.productos .row .col-6 {
-  width: 50;
-}
-.productos .row .col-7 {
-  width: 58.3333333333;
-}
-.productos .row .col-8 {
-  width: 66.6666666667;
-}
-.productos .row .col-9 {
-  width: 75;
-}
-.productos .row .col-10 {
-  width: 83.3333333333;
-}
-.productos .row .col-11 {
-  width: 91.6666666667;
-}
-.productos .row .col-12 {
-  width: 100;
 }/*# sourceMappingURL=estilos.css.map */
