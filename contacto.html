@@ -11,6 +11,7 @@
     <meta name="description" content="Conoce nuestro catálogo y encuentra las mejores prendas y diseños con la mejor calidad de cueros, sinteticos, algodon y telas de primera calidad 100% peruana">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>Nos puedes contactar mediante: |Marco Teran</title>
   </head>
   <body>
@@ -25,13 +26,13 @@
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
-                  <a class="nav-link active navLinks" href="hombre.html">Hombre</a>
+                  <a class="nav-link navLinks" href="hombre.html">Hombre</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link navLinks" href="mujer.html">Mujer</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link navLinks" href="niños.html">Niños</a>
+                  <a class="nav-link navLinks" href="ninos.html">Niños</a>
                 </li>
               </ul>
               <span class="navbar-text d-flex justify-content-evenly">
@@ -46,7 +47,7 @@
         </nav>
          <!-- promociones -->
          <div class="promos">
-          <p>50% de descuento en prendas para mujer</p>
+          <p class="animate__animated animate__pulse animate__repeat-2">50% de descuento en prendas para mujer</p>
         </div>
   </header>
        <!-- nav -- -->
@@ -54,57 +55,58 @@
     <p>puedes contactarnos mediante las siguientes formas</p>
     </div>
   <!-- contacto -->
-  <form class="row g-3 px-4 pb-5 mx-4">
-    <div class="col-md-6">
-      <label for="inputEmail4" class="form-label">Email</label>
-      <input type="email" class="form-control" id="inputEmail4" placeholder="multiversoconfirmado@gmail.com">
-    </div>
-    <div class="col-md-6">
-      <label for="inputPassword4" class="form-label">contraseña</label>
-      <input type="password" class="form-control" id="inputPassword4">
-    </div>
-    <div class="col-12">
-      <label for="inputAddress" class="form-label">direccion</label>
-      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-    </div>
-    <div class="col-12">
-      <label for="inputAddress2" class="form-label">segunda direccion (opcional)</label>
-      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartamento, oficina o piso">
-    </div>
-    <div class="col-md-6">
-      <label for="inputCity" class="form-label">ciudad</label>
-      <input type="text" class="form-control" id="inputCity">
-    </div>
-    <div class="col-md-4">
-      <label for="inputState" class="form-label">State</label>
-      <select id="inputState" class="form-select">
-        <option selected>seleccione su pais</option>
-        <option>peru</option>
-        <option>argentina</option>
-        <option>colombia</option>
-        <option>chile</option>
-        <option>estados unidos</option>
-        <option>ecuador</option>
-        <option>bolivia</option>
-        <option>uruguay</option>
-      </select>
-    </div>
-    <div class="col-md-2">
-      <label for="inputZip" class="form-label">Zip</label>
-      <input type="text" class="form-control" id="inputZip">
-    </div>
-    <div class="col-12">
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="gridCheck">
-        <label class="form-check-label" for="gridCheck">
-         <p>acepto los <a href="">terminos y condiciones</a></p> 
-        </label>
+    <form method="post" action="email.php" class="row g-3 px-4 pb-5 mx-4">
+      <div class="col-md-6">
+        <label for="inputEmail4" class="form-label">Nombres</label>
+        <input type="email" name="inp_nombre" class="form-control" id="validationDefault01" required>
       </div>
-    </div>
-    <div class="col-12 d-flex justify-content-center" >
-      <button type="submit" class="btn btn-primary">Sign in</button>
-    </div>
-  </form>
+      <div class="col-md-6">
+        <label for="validationDefault01" class="form-label">Apellidos</label>
+        <input type="text" name="inp_apellido" class="form-control" id="validationDefaultUsername"  required>
+      </div>
+      <div class="col-12">
+        <label for="validationDefault03" class="form-label">Direccion</label>
+      <input type="text" name="inp_dir" class="form-control" id="validationDefault02" required>
+      </div>
+      <div class="col-12">
+        <label for="validationDefault03" class="form-label">segunda direccion</label>
+        <textarea class="form-control" name="inp_mensaje" id="validationTextarea" placeholder="Required example textarea" required></textarea>
+      </div>
+      <div class="col-md-6">
+        <label for="validationDefault03" class="form-label">ciudad/estado/provincia</label>
+        <input type="text" name="inp_ciudad" class="form-control" id="validationDefault03" required>
+      </div>
+      <div class="col-md-4">
+        <label for="validationDefault04" class="form-label">País</label>
+        <select class="form-select" name="inp_pais" id="validationDefault04" required>
+          <option selected disabled value="">elige su país</option>
+            <option>peru</option>
+            <option>argentina</option>
+            <option>colombia</option>
+            <option>chile</option>
+            <option>estados unidos</option>
+            <option>ecuador</option>
+            <option>bolivia</option>
+            <option>uruguay</option>
+        </select>
+      </div>
+      <div class="col-md-2">
+        <label for="validationDefault05" class="form-label col-12">Codigo postal</label>
+        <input type="text" name="inp_postal" class="form-control" id="validationDefault05" required>
+      </div>
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+          <label class="form-check-label" for="invalidCheck2">
+            Acepto los <a href="#">terminos y condiciones</a>
+          </label>
+        </div>
+      </div>
+      <div class="col-12 d-flex justify-content-center" >
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </div>
+    </form>
+  
   <div class="contactoW">
       <h2>whatsapp</h2>
        <div>
